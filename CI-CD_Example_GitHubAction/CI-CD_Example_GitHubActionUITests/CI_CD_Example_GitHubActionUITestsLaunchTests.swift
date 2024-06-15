@@ -32,5 +32,6 @@ final class CI_CD_Example_GitHubActionUITestsLaunchTests: XCTestCase {
     
     func test_Success() {
         XCTAssertTrue(true)
+        
     }
 }
