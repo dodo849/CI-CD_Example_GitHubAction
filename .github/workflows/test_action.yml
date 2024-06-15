@@ -22,7 +22,11 @@ jobs:
 
     # Step은 job일부로 실행될 일련의 task들
     steps:
-      # uses를 사용하면 GitHub Action에서 기본적으로 제공하는 액션을 사용할 수 있음 아래 액션은 repository에 checkout하는 액션
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '13.1'
+          
       - uses: actions/checkout@v3
 
       # shell을 이용해 하나의 명령을 수행
