@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
    build:
     # 작업 실행 환경
-    runs-on: macos-14
+    runs-on: macos-14.1.1
 
     # Step은 job일부로 실행될 일련의 task들
     steps:          
