@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: test_action
 
 # Controls when the workflow will run
 on:
@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
    build:
     # 작업 실행 환경
-    runs-on: macos-latest
+    runs-on: macos-14
 
     # Step은 job일부로 실행될 일련의 task들
     steps:
