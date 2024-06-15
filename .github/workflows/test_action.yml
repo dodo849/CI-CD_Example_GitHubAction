@@ -21,14 +21,9 @@ jobs:
     runs-on: macos-14
 
     # Step은 job일부로 실행될 일련의 task들
-    steps:
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '15.0'
-          
+    steps:          
       - uses: actions/checkout@v3
 
       # shell을 이용해 하나의 명령을 수행
       - name: Start xcode build 🛠
-        run: xcodebuild clean test -project CI-CD_Example_GitHubAction/CI-CD_Example_GitHubAction.xcodeproj -scheme CI-CD_Example_GitHubAction -destination 'platform=iOS Simulator,name=iPhone 13 Pro,OS=15.0'
+        run: xcodebuild clean test -project CI-CD_Example_GitHubAction/CI-CD_Example_GitHubAction.xcodeproj -scheme CI-CD_Example_GitHubAction -destination 'platform=iOS Simulator,name=iPhone 13,OS=latest'
